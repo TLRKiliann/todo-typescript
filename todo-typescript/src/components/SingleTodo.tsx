@@ -1,5 +1,7 @@
 import React, {useState, useEffect, useRef} from "react";
 import { Todo } from "../models/model";
+import { AiFillEdit, AiFillDelete } from "react-icons/ai";
+import { MdDone } from "react-icons/md";
 import "./styles.css";
 
 
@@ -42,6 +44,7 @@ const SingleInput = ({ todo, todos, setTodos }: props) => {
           ref={secondRef}
           value={editTodo}
           onChange={(e) => setEditTodo(e.target.value)}
+          style={{fontSize: "1.1rem"}}
         />
         ) : todo.isDone ? (
         <s>{todo.todo}</s>
@@ -55,11 +58,11 @@ const SingleInput = ({ todo, todos, setTodos }: props) => {
             if (!edit && !todo.isDone) {
               setEdit(!edit)
             }
-          }} className="edit--span">Edit</span>
+          }} className="edit--span">Edit<AiFillEdit /></span>
       
-          <span onClick={() => handleDone(todo.id)} className="done--span">Done</span>
+          <span onClick={() => handleDone(todo.id)} className="done--span">Done<MdDone /></span>
 
-          <span onClick={() => handleDelete(todo.id)} className="del--span">Delete</span>
+          <span onClick={() => handleDelete(todo.id)} className="del--span">Delete<AiFillDelete /></span>
 
         </div>
 
