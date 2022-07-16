@@ -1,0 +1,16 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+
+  font-family: "One-serif";
+  background: steelblue;
+  color: white;
+}
+
+.App {
+  margin: 20px 200px;
+  padding: 20px 0px;
+  text-align: center;
+  border: 2px solid white;
+}

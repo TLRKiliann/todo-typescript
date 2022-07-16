@@ -1,0 +1,58 @@
+.inputfield button {
+    padding: 1px 20px;
+}
+
+.todolist--div {
+    margin: auto;
+    margin: 0px 40px;
+    margin-top: 20px;
+    background: lightblue;
+}
+
+.singleinput--div {
+    margin: 2% 3%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: blue;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.btn--action {
+    width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.edit--span {
+    padding: 3px 10px;
+    font-family: "One-serif";
+    font-size: 1.2rem;
+    background: yellow;
+    color: black;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.done--span {
+    padding: 3px 10px;
+    font-family: "One-serif";
+    font-size: 1.2rem;
+    background: steelblue;
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.del--span {
+    padding: 3px 10px;
+    font-family: "One-serif";
+    font-size: 1.2rem;
+    background: red;
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+}
